@@ -6,21 +6,7 @@
 
 enum custom_keycodes {
   RGB_SLD = ML_SAFE_RANGE,
-  EMAIL,
-};
-
-bool process_record_user(uint16_t keycode, keyrecord_t *record) {
-    switch (keycode) {
-    case EMAIL:
-        if (record->event.pressed) {
-            // when keycode EMAIL is pressed
-            SEND_STRING("emailhere");
-        } else {
-            // when keycode EMAIL is released
-        }
-        break;
-    }
-    return true;
+  M_EMAIL,
 };
 
 enum tap_dance_codes {
@@ -146,6 +132,14 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         rgblight_mode(1);
       }
       return false;
+    case M_EMAIL:
+        if (record->event.pressed) {
+            // when keycode EMAIL is pressed
+            SEND_STRING("emailhere");
+        } else {
+            // when keycode EMAIL is released
+        }
+        break;
   }
   return true;
 }
