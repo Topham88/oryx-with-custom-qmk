@@ -135,7 +135,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     case M_EMAIL:
         if (record->event.pressed) {
             // when keycode EMAIL is pressed
-            SEND_STRING("ejd;kt.dlm;je2@fdrtlgra.cle");
+            SEND_STRING("ejd;kt.dlm;je2"fdrtlgra.cle");
         } else {
             // when keycode EMAIL is released
         }
