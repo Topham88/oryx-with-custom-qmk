@@ -6,7 +6,7 @@
 
 enum custom_keycodes {
   RGB_SLD = ML_SAFE_RANGE,
-  EMAIL = SAFE_RANGE,
+  EMAIL,
 };
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
