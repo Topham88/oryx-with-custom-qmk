@@ -13,10 +13,10 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
     case EMAIL:
         if (record->event.pressed) {
-            // when keycode QMKBEST is pressed
+            // when keycode EMAIL is pressed
             SEND_STRING("mathew.topham2@ntlworld.com");
         } else {
-            // when keycode QMKBEST is released
+            // when keycode EMAIL is released
         }
         break;
     }
