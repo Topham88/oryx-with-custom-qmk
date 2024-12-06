@@ -14,7 +14,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     case EMAIL:
         if (record->event.pressed) {
             // when keycode EMAIL is pressed
-            SEND_STRING("mathew.topham2@ntlworld.com");
+            SEND_STRING("emailhere");
         } else {
             // when keycode EMAIL is released
         }
